@@ -1,0 +1,177 @@
+<!--Assignment #1
+Student: Ramsin Adam
+Georgian ID: 200484980
+Description: Making a poster with its own fonts
+-->
+
+<!-- Elements, metadata, and sematic elements-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Making Beetlejuice Poster">
+<meta charset="utf-8">
+<title>Beetlejuice Poster</title>
+<meta name="robots" content="noindex, nofollow">
+
+<!--Linking the CSS-->
+<link rel="stylesheet" href="./css/style.css">
+
+<!-- Font that will be used-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="wrapper">
+  <header>
+    <div class="logo-container">
+        <p class="actor-name"><span>Michael Keaton is</span></p>
+    <img src="BeetleJuicelogo.png" alt="logo">
+    <p class="second-line"><span>The Name In Laughter From The Hereafter</span></p>
+
+    </div>
+<nav>
+     <ul>
+  <li><a href="https://www.imdb.com/title/tt0094721/" target="_blank">Link to the Movie Page</a></li>
+    </ul>
+</nav>
+ </header>
+
+<main>
+  <div class="poster">
+    <h1 class="poster-title"><span>This House... If You've Seen One Ghost... You Haven't Seen Them All</span></h1>
+    <img src="beetlejuice-nt.png" alt="Beetlejuice Poster" class="beetlejuice-nt.png">
+    <img src="A-GEFFEN-COMPANY-RELEASE-WB.png" alt="Geffen Company and Warner Bros distribution" class="A-GEFFEN-COMPANY-RELEASE-WB.png">
+    <img src="parental-guidance-suggested.png" alt="Parental Advisory" class="parental-guidance-suggested.png-">
+    <img src="dolby-digital.png" alt="Dolby Digital" class="dolby-digital.png">
+    <p class="poster-credits">
+      <span>The Geffen Company presents a Tim Burton film "Beetlejuice" starring Alec Baldwin, Geena Davis, 
+      Jeffrey Jones, Catherine O'Hara, Winona Ryder, and Michael Keaton as Beetlejuice. Music by Danny Elfman,
+      director of photography Thomas Ackerman, story by Michael McDowell & Larry Wilson, 
+      screenplay by Michael McDowell and Warren Skaaren, produced by Michael Bender, Larry Wilson, 
+      and Richard Hashimoto, directed by Tim Burton.</span>
+    </p> 
+  </div>
+</main>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+CSS:
+
+
+
+/* style.css */
+
+/* body */
+body {
+  font-family: "Creepster", cursive, "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* header of the html */
+header {
+  background-color: black;
+  color: #ffffff;
+  padding: 10px;
+}
+ /* This controls the logo itself of the poster */
+.logo-container > img {
+  width:150px;
+  height:50px;
+
+ }
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  display: inline;
+  margin-left: 10px;
+}
+
+nav > ul > li > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+ /* This sentence will appear at the very top of the poster */
+.poster-title {
+  font-family: "Creepster", cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/*This sentence will appear at the bottom of the poster*/
+.poster-credits {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+/*This sentence will appear above the logo*/
+.actor-name {
+  text-align: center;
+  margin-top: 10px;
+}
+/*This sentence will appear below the logo*/
+.second-line {
+  text-align: center;
+  margin-top: 10px;
+}
+/*This logo will appear on the bottom left of the poster but below the ending credits */
+.parental-advisory-img {
+  display: block;
+  margin-bottom: 10px;
+}
+ /* This logo will appear on the bottom left of the poster and right next to the parental advisory image,
+ but below the ending credits */
+
+.dolby-digital-img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+ /* This logo will appear on the bottom right of the poster, but below the ending credits */
+.geffen-company-wb-img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
